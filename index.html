@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Route Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <div class="container">
+        <h2>⚡ EV Route Planner</h2>
+        <div class="controls">
+            <input type="text" id="start" placeholder="Enter Start Location">
+            <input type="text" id="destination" placeholder="Enter Destination">
+            <button onclick="planRoute()">Plan Route</button>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/polyline/1.1.1/polyline.js"></script> <!-- Required for route decoding -->
+    <script src="script.js"></script>
+</body>
+</html>
